@@ -1,19 +1,27 @@
 # AI_workout_Planner
 
 ## Overview
-This application generates custom workout plans based on the user's BMI, fitness level, age, and available time. It leverages AI to provide personalized recommendations while ensuring user data security and compliance with privacy regulations.
+This application generates custom workout plans based on user inputs such as fitness level, age, and available workout time using AI.
 
 ## Features
-- Custom workout plans based on user input
-- AI-driven recommendations
-- Data encryption for user information
-- Role-based access control
-- Compliance with GDPR and CCPA
+- User-friendly interface for inputting personal data.
+- Secure API for handling user data.
+- AI-driven workout plan generation.
+- Logging and monitoring for performance and security.
 
-## Security Measures
-1. **Data Privacy Impact Assessment**: Conduct assessments to identify risks associated with user data collection and management.
-2. **Data Encryption**: Implement encryption for user data at rest and in transit.
-3. **Access Control Policies**: Define and implement robust access control policies.
-4. **Compliance**: Ensure compliance with relevant privacy regulations.
-5. **Continuous Security Assessments**: Develop a plan for ongoing security assessments and audits.
-6. **Secure Coding Practices**: Integrate secure coding practices into the development process.
+## Getting Started
+1. Clone the repository.
+2. Install dependencies.
+3. Run the application.
+
+## API Specifications
+- **POST /api/workout-plan**: Generate a custom workout plan.
+  - **Request Body**:
+    - `fitness_level`: String (e.g., 'beginner', 'intermediate', 'advanced')
+    - `age`: Integer
+    - `available_time`: Integer (in minutes)
+  - **Response**:
+    - `workout_plan`: Object containing the generated workout routine.
+
+## Security
+User data is encrypted and securely stored to ensure privacy.
